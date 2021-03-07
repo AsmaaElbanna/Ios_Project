@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upComingEventIdentifier" id="gTV-IL-0wX" customClass="UpComingCollectionViewCell" customModule="IOSProjectInit2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-Hj-mFp">
+                        <rect key="frame" x="10" y="20" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sh-Kn-JWK">
+                        <rect key="frame" x="10" y="81" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-pR-Rd8">
+                        <rect key="frame" x="10" y="50.5" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.29988895939999999" green="0.1244339818" blue="0.28812492309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ddo-pR-Rd8" firstAttribute="top" secondItem="csc-Hj-mFp" secondAttribute="bottom" constant="10" id="3QA-3G-FdC"/>
+                <constraint firstItem="csc-Hj-mFp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="6ht-TJ-L77"/>
+                <constraint firstAttribute="trailing" secondItem="0sh-Kn-JWK" secondAttribute="trailing" constant="10" id="AC7-yp-pkG"/>
+                <constraint firstItem="csc-Hj-mFp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Bgh-JM-If9"/>
+                <constraint firstAttribute="trailing" secondItem="csc-Hj-mFp" secondAttribute="trailing" constant="10" id="Iuh-1G-uuy"/>
+                <constraint firstItem="ddo-pR-Rd8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eMw-dg-k6J"/>
+                <constraint firstItem="0sh-Kn-JWK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="uP8-pV-gbp"/>
+                <constraint firstAttribute="trailing" secondItem="ddo-pR-Rd8" secondAttribute="trailing" constant="10" id="xpH-9m-bom"/>
+                <constraint firstItem="0sh-Kn-JWK" firstAttribute="top" secondItem="ddo-pR-Rd8" secondAttribute="bottom" constant="10" id="yVc-Ib-q9c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="248" height="134"/>
+            <connections>
+                <outlet property="dateLabel" destination="ddo-pR-Rd8" id="3Ia-zC-bLW"/>
+                <outlet property="eventNameLabel" destination="csc-Hj-mFp" id="jLb-0x-Dki"/>
+                <outlet property="timeLabel" destination="0sh-Kn-JWK" id="9qt-oT-7xG"/>
+            </connections>
+            <point key="canvasLocation" x="18.840579710144929" y="103.79464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

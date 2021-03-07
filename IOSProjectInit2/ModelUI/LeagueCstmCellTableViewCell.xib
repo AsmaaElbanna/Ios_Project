@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leagueCell" rowHeight="177" id="Td3-LG-9Bl" customClass="LeagueCstmCellTableViewCell" customModule="IOSProjectInit2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Td3-LG-9Bl" id="xQh-B9-SEZ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nyg-7D-pJ2">
+                        <rect key="frame" x="10" y="10" width="150" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="37F-lT-LNW"/>
+                            <constraint firstAttribute="width" constant="150" id="uYc-jL-Hem"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4O-e7-WGZ">
+                        <rect key="frame" x="180" y="50" width="200" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gbd-Bh-Wql"/>
+                            <constraint firstAttribute="width" constant="200" id="pyZ-Fg-pYC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAa-8m-drv">
+                        <rect key="frame" x="344" y="50" width="40" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7aH-Ua-xW0"/>
+                            <constraint firstAttribute="height" constant="35" id="ofF-hX-xBe"/>
+                        </constraints>
+                        <state key="normal" title="Show" image="youtube.png"/>
+                        <connections>
+                            <action selector="playYoutubeBtn:" destination="Td3-LG-9Bl" eventType="touchUpInside" id="YMy-OG-VrH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="dAa-8m-drv" secondAttribute="trailing" constant="10" id="AH5-cD-6mz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dAa-8m-drv" secondAttribute="bottom" constant="40" id="HQ3-m6-Eyy"/>
+                    <constraint firstItem="O4O-e7-WGZ" firstAttribute="leading" secondItem="nyg-7D-pJ2" secondAttribute="trailing" constant="20" id="Ipp-e2-YS2"/>
+                    <constraint firstAttribute="bottom" secondItem="nyg-7D-pJ2" secondAttribute="bottom" constant="10" id="OnG-xa-pvp"/>
+                    <constraint firstItem="nyg-7D-pJ2" firstAttribute="leading" secondItem="xQh-B9-SEZ" secondAttribute="leading" constant="10" id="cbi-AZ-TgY"/>
+                    <constraint firstItem="nyg-7D-pJ2" firstAttribute="top" secondItem="xQh-B9-SEZ" secondAttribute="top" constant="10" id="egK-VD-UIU"/>
+                    <constraint firstItem="O4O-e7-WGZ" firstAttribute="top" secondItem="xQh-B9-SEZ" secondAttribute="top" constant="50" id="gMl-AP-41R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leagueImg" destination="nyg-7D-pJ2" id="lRO-gI-9It"/>
+                <outlet property="leagueTitle" destination="O4O-e7-WGZ" id="EVo-yb-jPK"/>
+            </connections>
+            <point key="canvasLocation" x="-218.84057971014494" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="youtube.png" width="368.6400146484375" height="368.6400146484375"/>
+    </resources>
+</document>
